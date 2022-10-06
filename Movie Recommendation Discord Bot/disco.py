@@ -9,6 +9,8 @@ import pickle
 from itertools import cycle
 import pandas as pd
 
+TOKEN = os.environ["TOKEN"]
+
 client=commands.Bot(command_prefix='!',intents=discord.Intents.all())
 
 status=['Jamming out to music!','Eating','Sleeping']
@@ -158,4 +160,4 @@ async def clear(ctx,amount=5):
 
     
     
-client.run('OTgwNjQyMTE1MTA3MzA3NjEw.G8jbca.oGIP8OLRozLz-GlF3ICvzjWvk5tAuMKqkQDgr8')
+client.run('TOKEN')
